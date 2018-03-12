@@ -1,0 +1,93 @@
+_______________________________________________________________
+        __          _______   _____                  
+        \ \        / /  __ \ / ____|                 
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \ 
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team 
+                       Version 2.9.3
+          Sponsored by Sucuri - https://sucuri.net
+   @_WPScan_, @ethicalhack3r, @erwan_lr, pvdl, @_FireFart_
+_______________________________________________________________
+
+[32m[+][0m URL: http://demo.tech4kids.club/
+[32m[+][0m Started: Sun Mar 11 20:02:50 2018
+
+[32m[+][0m robots.txt available under: 'http://demo.tech4kids.club/robots.txt'
+[32m[+][0m Interesting entry from robots.txt: http://demo.tech4kids.club/wp-admin/admin-ajax.php
+[33m[!][0m The WordPress 'http://demo.tech4kids.club/readme.html' file exists exposing a version number
+[33m[!][0m Full Path Disclosure (FPD) in 'http://demo.tech4kids.club/wp-includes/rss-functions.php': 
+[32m[+][0m Interesting header: KEEP-ALIVE: timeout=15
+[32m[+][0m Interesting header: LINK: <http://demo.tech4kids.club/wp-json/>; rel="https://api.w.org/"
+[32m[+][0m Interesting header: SERVER: Apache
+[32m[+][0m Interesting header: X-POWERED-BY: PHP/5.6.34
+[32m[+][0m This site has 'Must Use Plugins' (http://codex.wordpress.org/Must_Use_Plugins)
+[32m[+][0m XML-RPC Interface available under: http://demo.tech4kids.club/xmlrpc.php
+
+[32m[+][0m WordPress version 4.9.4 (Released on 2018-02-06) identified from meta generator, links opml
+[31m[!][0m 1 vulnerability identified from the version number
+
+[31m[!][0m Title: WordPress <= 4.9.4 - Application Denial of Service (DoS) (unpatched)
+    Reference: https://wpvulndb.com/vulnerabilities/9021
+    Reference: https://baraktawily.blogspot.fr/2018/02/how-to-dos-29-of-world-wide-websites.html
+    Reference: https://github.com/quitten/doser.py
+    Reference: https://thehackernews.com/2018/02/wordpress-dos-exploit.html
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-6389
+
+[32m[+][0m WordPress theme in use: colormag - v1.2.2
+
+[32m[+][0m Name: colormag - v1.2.2
+ |  Last updated: 2018-02-27T00:00:00.000Z
+ |  Location: http://demo.tech4kids.club/wp-content/themes/colormag/
+ |  Readme: http://demo.tech4kids.club/wp-content/themes/colormag/readme.txt
+[33m[!][0m The version is out of date, the latest version is 1.2.4
+ |  Style URL: http://demo.tech4kids.club/wp-content/themes/colormag/style.css
+ |  Theme Name: ColorMag
+ |  Theme URI: https://themegrill.com/themes/colormag/
+ |  Description: ColorMag is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, ma...
+ |  Author: ThemeGrill
+ |  Author URI: https://themegrill.com
+
+[32m[+][0m Enumerating plugins from passive detection ...
+ | 4 plugins found:
+
+[32m[+][0m Name: contact-form-7 - v4.9.1
+ |  Last updated: 2018-02-27T11:06:00.000Z
+ |  Location: http://demo.tech4kids.club/wp-content/plugins/contact-form-7/
+ |  Readme: http://demo.tech4kids.club/wp-content/plugins/contact-form-7/readme.txt
+[33m[!][0m The version is out of date, the latest version is 5.0.1
+
+[32m[+][0m Name: ultimate-product-catalogue - v4.2.26
+ |  Last updated: 2018-03-08T19:04:00.000Z
+ |  Location: http://demo.tech4kids.club/wp-content/plugins/ultimate-product-catalogue/
+ |  Readme: http://demo.tech4kids.club/wp-content/plugins/ultimate-product-catalogue/readme.txt
+[33m[!][0m The version is out of date, the latest version is 4.3.6
+
+[32m[+][0m Name: wf-cookie-consent - v1.1.2
+ |  Latest version: 1.1.2 (up to date)
+ |  Last updated: 2017-11-16T08:08:00.000Z
+ |  Location: http://demo.tech4kids.club/wp-content/plugins/wf-cookie-consent/
+ |  Readme: http://demo.tech4kids.club/wp-content/plugins/wf-cookie-consent/readme.txt
+
+[32m[+][0m Name: wordpress-seo - v5.8
+ |  Last updated: 2018-03-08T09:52:00.000Z
+ |  Location: http://demo.tech4kids.club/wp-content/plugins/wordpress-seo/
+ |  Readme: http://demo.tech4kids.club/wp-content/plugins/wordpress-seo/readme.txt
+[33m[!][0m The version is out of date, the latest version is 7.0.2
+
+[32m[+][0m Enumerating usernames ...
+[32m[+][0m Identified the following 3 user/s:
+    +----+---------------------+------------------+
+    | Id | Login               | Name             |
+    +----+---------------------+------------------+
+    | 1  | tech4kids54         | David            |
+    | 2  | tech4kids54_editeur | Jean-Marc Martin |
+    | 3  | bi9x5               | Omar GUEMMI      |
+    +----+---------------------+------------------+
+
+[32m[+][0m Finished: Sun Mar 11 20:04:49 2018
+[32m[+][0m Requests Done: 379
+[32m[+][0m Memory used: 96.551 MB
+[32m[+][0m Elapsed time: 00:01:58
